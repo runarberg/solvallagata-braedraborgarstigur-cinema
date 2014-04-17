@@ -15,6 +15,10 @@ a {
     color: #800;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .logo {
     background-color: rgba(255, 255, 255, .5);
     border-top: 5px solid #400;
