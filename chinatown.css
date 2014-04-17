@@ -1,0 +1,144 @@
+body {
+    background-color: #B3B4D9;
+    font-family: 'Old Standard TT', serif;
+    font-size: 18px;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+}
+
+h1, h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    text-align: center;
+}
+
+a {
+    color: #5E0605;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #DAC0CD;
+    border-bottom: 5px solid #5E0605;
+    padding-bottom: 3em;
+}
+
+h1.logo {
+    background-image: url(chinese-header.jpeg);
+    background-size: 100%;
+    padding-top: 63.7%;
+    margin: 0 0 1.5em;
+    height: 0;
+    width: 100%;
+}
+
+.intro {
+    width: 66.7%;
+    margin: 0.5em auto;
+}
+
+.intro strong {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    color: #5E0605;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+}
+
+@media only screen and (min-width: 640px) {
+    .main-content section {
+        float: left;
+        width: 50%;
+    }
+
+    .main-content {
+        position: relative;
+    }
+
+    .preshow:before, .feature:before {
+        content: "";
+        width: 130px;
+        height: 431px;
+    }
+
+    .preshow:before {
+        float: right;
+    }
+
+    .feature:before {
+        float: left;
+    }
+
+    .main-content figure {
+        position: absolute;
+        top: 0;
+    }
+}
+
+.main-content figure {
+    text-align: center;
+    width: 100%;
+}
+
+.main-content section p {
+    padding: 0 1.5em;
+    margin: 1.5em;
+}
+
+.feature-poster {
+    margin-top: 6em;
+    height: 323px;
+    width: 220px;
+}
+
+footer {
+    clear: both;
+    background-color: #B4B883;
+    border-top: 5px solid #5E0605;
+    padding-bottom: 3.7em;
+    margin-bottom: 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (min-width: 1280px) {
+    body {
+        font-size: 18px;
+    }
+    h1.logo {
+        background-size: auto;
+        padding-top: 0;
+        height: 816px;
+        width: 1280px;
+        margin: 0 auto;
+    }
+    .intro {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .main-content section {
+        float: none;
+        width: 100%;
+    }
+    .main-content figure {
+        float: none;
+        width: 100%;
+    }
+    .feature-poster {
+        margin: 1em;
+    }
+}

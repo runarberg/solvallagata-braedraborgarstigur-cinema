@@ -1,0 +1,129 @@
+body {
+    background-color: #f2f968;
+}
+
+header {
+    background: black;
+    text-align: center;
+}
+
+header:after {
+    content: "";
+    background: #f9e000;
+    background: -moz-linear-gradient(top, #f9e000 10%, #f2f968 85%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,#f9e000), color-stop(85%,#f2f968));
+    background: -webkit-linear-gradient(top, #f9e000 10%,#f2f968 85%);
+    background: -o-linear-gradient(top, #f9e000 10%,#f2f968 85%);
+    background: -ms-linear-gradient(top, #f9e000 10%,#f2f968 85%);
+    background: linear-gradient(to bottom, #f9e000 10%,#f2f968 85%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9e000', endColorstr='#f2f968',GradientType=0 );
+    border-top: 6px solid black;
+    box-shadow: 0 -1em 1em 0 #FFFFFF;
+    display: block;
+    height: 5em;
+}
+
+.logo {
+    display: inline-block;
+    background: #f9e000;
+    background: -moz-radial-gradient(center, ellipse cover, #f2f968 11%, #f9e000 66%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(11%,#f2f968), color-stop(66%,#f9e000));
+    background: -webkit-radial-gradient(center, ellipse cover, #f2f968 11%,#f9e000 66%);
+    background: -o-radial-gradient(center, ellipse cover, #f2f968 11%,#f9e000 66%);
+    background: -ms-radial-gradient(center, ellipse cover, #f2f968 11%,#f9e000 66%);
+    background: radial-gradient(ellipse at center, #f2f968 11%,#f9e000 66%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f968', endColorstr='#f9e000',GradientType=1 );
+    background-clip: padding-box;
+    border: 6px solid black;
+    border-radius: 1.5em;
+    box-shadow: 0 0 1.5em 1em #FFFFFF;
+    color: black;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 2em auto;
+    padding: 3em;
+    width: auto;
+    text-align: center;
+}
+
+.logo strong {
+    display: block;
+    font-size: 4.5em;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.intro {
+    background: -webkit-linear-gradient(90deg, #CCCCAC 1%,transparent 1%,transparent 90%,#CCCCAC 90%),
+    -webkit-linear-gradient(0deg , #CCCCAC 1%,transparent 1%,transparent 90%,#CCCCAC 90%);
+    background: linear-gradient(90deg, #CCCCAC 1%,transparent 1%,transparent 90%,#CCCCAC 90%),
+    linear-gradient(0deg , #CCCCAC 1%,transparent 1%,transparent 90%,#CCCCAC 90%);
+    background-size: .7em 1.5em;
+    background-color: #EEEEEE;
+    border: .45em dotted black;
+    border-radius: .3em;
+    color: black;
+    display: inline-block;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 1.5em;
+    letter-spacing: .2em;
+    line-height: 1.5em;
+    padding: .3em 2.2em .5em;
+    margin-top: -4em;
+    margin-bottom: -1em;
+    text-align: left;
+}
+
+.intro strong:before, .intro strong:after {
+    content: "\a";
+    white-space: pre;
+}
+
+.main-content {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 1.2em;
+}
+
+section h1, section h2, figure {
+    text-align: center;
+    margin-bottom: 0.65em;
+}
+
+.main-content section {
+    background:
+    -webkit-linear-gradient(0deg , #CCCCAC 1%,transparent 1%,transparent 90%,#CCCCAC 90%);
+    background:
+    linear-gradient(0deg , #CCCCAC 1%,transparent 1%,transparent 90%,#CCCCAC 90%);
+    background-size: .78em 1.5em;
+    background-color: #EEEEEE;
+    border: .35em dotted black;
+    margin: 2em auto;
+    max-width: 640px;
+}
+
+.main-content section > * {
+    padding: 0 3em;
+}
+
+.main-content p {
+    margin-top: 0.2em;
+    margin-bottom: 1.4em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+footer {
+    border-top: .5em dotted black;
+    font-family: monospace;
+    margin-top: 3em;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    header .logo {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}

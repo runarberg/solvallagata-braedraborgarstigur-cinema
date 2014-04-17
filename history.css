@@ -1,0 +1,11 @@
+section {
+    margin: 1em;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+td + td:before {
+    content: "—";
+}

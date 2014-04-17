@@ -1,0 +1,77 @@
+body {
+    background: black;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    border: 3px solid red;
+    border-radius: .5em;
+    margin: 0 -3px;
+}
+
+header > a:hover {
+    border: none;
+    margin: inherit;
+}
+
+.logo:before,
+.logo:after{
+    content: " ";
+    background: url(ghostbusters-logo.gif) no-repeat;
+    display: inline-block;
+    width: 288px;
+    height: 250px;
+}
+
+.logo {
+    color: white;
+    display: inline;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    vertical-align: middle;
+}
+
+.intro {
+    font-size: 1.2em;
+    line-height: 1.45em;
+    max-width: 640px;
+    margin: 2em auto;
+    text-align: justify;
+}
+
+.intro .feature {
+    text-transform: uppercase;
+}
+
+.main-content p {
+    max-width: 640px;
+    margin: 2em auto;
+    text-align: justify;
+}
+
+.ghostbusters-trailer {
+    display: block;
+    width: 640px;
+    height: 480px;
+    margin: auto;
+}
+
+@media screen and (max-width: 640px) {
+    p {
+        padding: 0 .7em;
+    }
+
+    .ghostbusters-trailer {
+        width: 480px;
+        height: 360px
+        margin: auto;
+    }
+}

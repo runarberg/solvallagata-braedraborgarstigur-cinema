@@ -1,0 +1,202 @@
+body {
+    background: white;
+}
+
+h1, h2 {
+    font-family: serif;
+}
+
+p {
+    font-family: "Josefin Slab", serif;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+p strong {
+    font-weight: 600;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+figure {
+    text-align: center;
+}
+
+.logo {
+    background-image: url(http://www.movieforums.com/community/attachment.php?attachmentid=10631&stc=1&d=1370687504);
+    background-size: 100%;
+    font-family: serif;
+    font-size: 4em;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.logo a {
+    background: red;
+    color: gold;
+    display: block;
+    padding: .3em 0;
+    position: absolute;
+    top: 52.2%;
+    width: 100%;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+.intro {
+    border-bottom: 2px solid darkgray;
+    font-weight: 300;
+    margin: 1em 3em 3em;
+    padding-bottom: 3em;
+}
+
+.intro p {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 50%;
+}
+
+.intro .strong {
+    margin-top: 2em;
+}
+
+.main-content {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flexbox;
+    display: flex;
+    -moz-box-pack: justify;
+    -webkit-box-pack: justify;
+    -ms-justify-content: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.main-content > .announcement, .main-content > .shows {
+    margin: 0 1em;
+    width: 35%;
+    width: calc(40% - 2em);
+}
+
+.main-content time {
+    font-weight: 600;
+}
+
+.main-content .shows h1 {
+    text-align: right;
+}
+
+.main-content p {
+    text-align: justify;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.main-content .feature-poster {
+    width: 20%;
+    max-width: 428px;
+    max-height: 634px;
+}
+
+.main-content .feature-poster img {
+    width: 100%;
+}
+
+.badlands-trailer {
+    border-top: 2px solid darkgray;
+    border-bottom: 2px solid darkgray;
+    margin: 3em;
+    padding: 3em 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 45%;
+    padding-top: 60px;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .logo {
+        font-size: 3em;
+    }
+    .main-content {
+        -moz-box-orient: vertical;
+        -webkit-box-orient: vertical;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .main-content .feature-poster {
+        -ms-order: -1;
+        -webkit-order: -1;
+        order: -1;
+        width: 100%;
+    }
+    .main-content .feature-poster img {
+        width: 214px;
+        height: 317px;
+    }
+    .main-content .announcement, .main-content .shows {
+        width: 45%;
+        width: calc(50% - 2em);
+    }
+    .video-container {
+        width: 90%;
+        padding-bottom: 50.625%;
+    }
+}
+
+@media (max-width: 640px) {
+    .logo {
+        font-size: 2em;
+    }
+    .main-content .feature-poster {
+        -ms-order: 0;
+        -webkit-order: 0;
+        order: 0;
+    }
+    .main-content .announcement, .main-content .shows {
+        width: 90%;
+    }
+    .main-content h1, .main-content h2 {
+        text-align: center !important;
+    }
+    .video-container {
+        width: 100%;
+        padding-bottom: 56.25%;
+    }
+}
