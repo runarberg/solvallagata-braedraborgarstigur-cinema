@@ -1,34 +1,27 @@
 body {
-    text-align: center;
+  text-align: center;
 }
-
 header h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
-
-section h1 {
-    font-size: 1.2em;
-}
-
 section {
-    margin: 1em;
+  margin: 1em;
 }
-
+section h1 {
+  font-size: 1.2em;
+}
 a {
-    text-decoration: none;
-    color: #008;
+  text-decoration: none;
+  color: #008;
 }
-
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 table {
-    display: inline-block;
-    margin: auto auto;
-    text-align: left;
+  display: inline-block;
+  margin: auto auto;
+  text-align: left;
 }
-
 td + td:before {
-    content: "—";
+  content: "—";
 }
