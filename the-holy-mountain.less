@@ -1,0 +1,93 @@
+p {
+    font-family: serifs;
+}
+
+header {
+    background: black;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+
+    .epigram {
+        margin: 0 auto;
+        text-align: justify;
+        width: 50%;
+        &::before {
+            content: "“";
+        }
+        &::after {
+            content: "”";
+        }
+    }
+    
+    h1 {
+        background: url("http://www.cvltnation.com/wp-content/uploads/2013/02/HolyMountain01.jpg");
+        background-size: 100%;
+        margin: 0;
+        padding-top: 56.25%;
+    }
+
+    h2 {
+        font-weight: normal;
+        .movie-title {
+            display: block;
+            font-style: italic;
+        }
+    }
+
+    h3 {
+        font-style: italic;
+        &::before,
+        &::after {
+            content: "—";
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+                color: yellow;
+            }
+        }
+    }
+}
+
+.feature {
+    p:nth-child(1) {
+        background-image: url("http://www.redefinemag.com/wp-content/uploads/2013/08/2013_Holy-Mountain-03.jpg");
+        background-color: #FF8841;
+        background-repeat: no-repeat; 
+        min-height: 299px;
+        margin: 0;
+        padding: 0 1em 0 600px;
+    }
+
+    p:nth-child(2) {
+        background-image: url("http://st1le.org/wp-content/uploads/2012/05/very-subtle-Animated-GIFs-st1le-4.gif");
+        background-color: #94F2FF;
+        background-position: right;
+        background-repeat: no-repeat; 
+        min-height: 254px;
+        margin: 0;
+        padding: 0 500px 0 1em;
+    }
+    p:nth-child(3) {
+        background-image: url("http://content.animalnewyork.com/wp-content/uploads/burnMoneyHolyMountain.gif");
+        background-color: orange;
+        background-position: 50% 100%;
+        background-repeat: no-repeat; 
+        margin: 0;
+        padding: 1em 169px 20% 20%;
+    }
+    
+}
+.preshow {
+        background-image: url("http://www.cosmicoutlaw.com/wp-content/uploads/2013/01/theholymountain.jpg");
+        background-color: pink;
+        background-position: left;
+        background-repeat: no-repeat; 
+        margin: 0;
+        min-height: 253px;
+        padding: 50px 1em 0 546px;
+}
+
