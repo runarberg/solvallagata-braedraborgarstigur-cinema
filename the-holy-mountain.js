@@ -1,14 +1,8 @@
 $(window).scroll(function() {
-    if($(window).scrollTop() + $(window).height() == $(document).height()) {
-        $(".info").css({
-            'position': "fixed",
-            'top': "100%"
-        }).animate({top: 0}, 3000, function() {
-            $(".info").css({
-                position: "absolute"
-            });
-        });
-        $("html, body").animate({ scrollTop: 0 }, 3000);
-        return false;
-    }
+    var t_pos = $(window).scrollTop(),
+        b_pos = t_pos + $(window).height(),
+        $el = $(".info"),
+        el_top = $el.offset().top;
+    var l_pos = (t_pos - el_top) + ($el.width()/2);
+    $(".info").css( {left: l_pos});
 });
