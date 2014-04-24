@@ -132,16 +132,30 @@ header h3::after {
   background-color: purple;
 }
 .trailer {
+  position: relative;
+  padding-bottom: 56.62%;
+  padding-top: 60px;
+  overflow: hidden;
+  width: 100%;
   margin: 0;
-  text-align: center;
 }
 @media only screen and (min-width: 680px) {
   .trailer {
-    padding-bottom: 42.19%;
+    padding: 60px 0 42.19%;
     width: 75%;
   }
 }
+.trailer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .preshow h1 {
+  -webkit-animation-duration: 4s;
+  -webkit-animation-name: colorfade;
+  -webkit-animation-iteration-count: infinite;
   animation-duration: 4s;
   animation-name: colorfade;
   animation-iteration-count: infinite;
@@ -178,6 +192,7 @@ header h3::after {
 footer .info {
   background-color: purple;
   color: white;
+  list-style: none;
   margin: 0;
   padding: 2em 0 2em 10%;
   text-align: left;
@@ -195,6 +210,17 @@ footer .info a {
 }
 footer .info a:hover {
   color: orange;
+}
+@-webkit-keyframes colorfade {
+  from {
+    color: #A1A;
+  }
+  50% {
+    color: #F1F;
+  }
+  to {
+    color: #A1A;
+  }
 }
 @keyframes colorfade {
   from {
