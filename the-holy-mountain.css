@@ -189,6 +189,25 @@ header h3::after {
     padding-top: 50px;
   }
 }
+.history {
+  background-color: brown;
+  color: white;
+  margin: 0;
+  min-height: 20em;
+  text-align: center;
+}
+.history p {
+  margin: 0;
+  padding-top: 2em;
+}
+.history a {
+  color: #CCC;
+  position: relative;
+  text-decoration: none;
+}
+.history a:hover {
+  text-decoration: underline;
+}
 footer {
   background-color: purple;
   overflow: hidden;
